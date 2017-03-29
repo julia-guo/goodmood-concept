@@ -1,0 +1,150 @@
+<html>
+<head>
+    <style type="text/css">
+        @font-face {
+            font-family:miniwakuwaku; src:url(fonts/mini-wakuwaku.otf);
+        }
+        
+        body{
+            margin:0;
+            background:#f0f0f0;
+            font-family:miniwakuwaku;
+        }
+        
+        .phone{
+            width:270px;
+            height:500px;
+            border-radius:30px;
+            margin:30px;
+            padding:20px;
+            position:relative;
+            background:#fff;
+            border:4px solid #eaeaea;
+        }
+        
+        .screen{
+            border-radius:0px;
+            width:250px;
+            height:420px;
+            background:#475d85;
+            margin-top:20px;
+            margin-left:-10px;
+            color:#ffffcf;
+            padding:20px;
+            font-size:30px;
+            line-height:30px;
+            text-align:center;
+            text-shadow:0px 0px 2px #ffffcf;
+        }
+        
+        #moon{
+            position:relative;
+            border-radius:100px 100px 100px 100px;
+            box-shadow:0px 0px 60px #ffffcf;
+            background:#ffffcf;
+            width:70px;
+            height:70px;
+            margin-left:90px;
+            margin-top:10px;
+            margin-bottom:20px;
+        }
+        
+        #moon::before{
+            position:absolute;
+            content:"";
+            border-radius:100px;
+            width:0px;
+            height:0px;
+            background:#000000;
+            border:3px solid #000;
+            box-shadow:0px 0px 1px #000;
+            z-index:1000;
+            margin-left:15px;
+            margin-top:25px;
+        }
+        
+        #moon::after{
+            position:absolute;
+            content:"";
+            border-radius:100px;
+            width:0px;
+            height:0px;
+            background:#000000;
+            border:3px solid #000;
+            box-shadow:0px 0px 1px #000;
+            z-index:1000;
+            margin-left:-15px;
+            margin-top:30px;
+        }
+        
+        .grass{
+            width:290px;
+            height:40px;
+            background:#12902a;
+            bottom:40px;
+            left:10px;
+            box-shadow:0px -1px 0px #299b3f, 0px -2px 0px #41a654;
+            position:absolute;
+        }
+        
+        .button{
+            background:#ffffcf;
+            width:200px;
+            padding:10px;
+            margin-left:15px;
+            border-radius:10px;
+            color:#525252;
+            margin-top:24px;
+        }
+        
+        .button2{
+            background:#ffffcf;
+            width:90px;
+            font-size:20px;
+            padding:10px;
+            margin-right:20px;
+            border-radius:10px;
+            color:#525252;
+            margin-top:24px;
+            display:inline-block;
+        }
+        
+        .feels{
+            position:absolute;
+            height:200px;
+            width:270px;
+            margin-left:-20px;
+            padding-left:20px;
+            background:transparent;
+        }
+        
+        .line{
+            position:absolute;
+            height:10px;
+            width:250px;
+            margin-left:2px;
+            margin-top:100px;
+            border-bottom:1px solid #fff;
+            font-size:15px;
+            text-align:left;
+            text-shadow:0px 0px 0px #fff;
+            line-height:0px;
+            font-style:;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>the feelbetter app: a concept</h1>
+    
+    <div class="phone"><div class="screen"><div id="moon" style="margin-top:50px;"></div><div style="font-size:50px;margin-top:20px;line-height:50px;">good evening, Julia!</div><div class="grass"></div></div></div>
+    <div class="phone"><div class="screen"><div id="moon"></div>how are you feeling right now?<div class="button">great!</div><div class="button">not so good</div><div class="grass"></div></div></div>
+    
+    <div class="phone"><div class="screen"><div id="moon"></div>oh no :(<br> what's wrong?<div class="feels"><div class="button2">i'm sad</div><div class="button2">annoyed</div><div class="button2">anxious</div><div class="button2">tired</div></div><div class="grass"></div></div></div>
+    
+    <div class="phone"><div class="screen"><div id="moon"></div>why are you sad?<div class="line">because... </div><div class="grass"></div></div></div>
+    
+    <div class="phone"><div class="screen"><div id="moon"></div><div style="font-size:20px;line-height:25px;">aw man, i'm sorry to hear about that. i know you really liked him. rejection is tough. but you're awesome and gorgeous; you'll find someone else soon who likes you back. don't worry!</div><div class="grass"></div></div></div>
+    
+</body>
+</html>
